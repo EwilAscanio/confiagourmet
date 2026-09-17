@@ -28,7 +28,7 @@ import { Logo } from "@/components/site/Logo";
 import { Gallery } from "@/components/site/Gallery";
 import mark from "@/assets/confia-mark.png";
 import heroImg from "@/assets/hero-lider.jpg";
-import yorman from "@/assets/lider_yorman.jpg";
+import yorman from "@/assets/lider_yorman.webp";
 import joni from "@/assets/lider_joni.jpg";
 import entrepreneur from "@/assets/entrepreneur.jpg";
 import cookware from "@/assets/business-cookware.jpg";

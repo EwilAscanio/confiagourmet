@@ -467,7 +467,7 @@ function Home() {
           </div>
         </div>
         <div className="border-t border-border px-5 py-5 text-center text-[0.7rem] text-muted-foreground lg:px-8">
-          © 2026 Confía Gourmet. Todos los derechos reservados.
+          © 2026 Confía Gourmet. Todos los derechos reservados. Desarrollado por ewilascanio.com
         </div>
       </footer>
 

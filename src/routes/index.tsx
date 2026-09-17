@@ -26,6 +26,7 @@ import {
 import { Nav } from "@/components/site/Nav";
 import { Logo } from "@/components/site/Logo";
 import { Gallery } from "@/components/site/Gallery";
+import { ContactSection } from "@/components/site/Contact";
 import mark from "@/assets/confia-mark.png";
 import heroImg from "@/assets/hero-lider.jpg";
 import yorman from "@/assets/lider_yorman.webp";
@@ -394,9 +395,9 @@ function Home() {
 
       <Gallery />
 
-      {/* BLOG + CTA */}
+      {/* BLOG */}
       <section id="blog" className="bg-background">
-        <div className="mx-auto grid max-w-[1400px] gap-10 px-5 py-16 lg:grid-cols-[1.3fr_1fr_0.8fr] lg:items-center lg:px-8">
+        <div className="mx-auto grid max-w-[1400px] gap-10 px-5 py-16 lg:grid-cols-[1.2fr_0.8fr] lg:items-center lg:px-8">
           <div>
             <p className="eyebrow">Blog</p>
             <h2 className="mt-3 text-2xl font-semibold sm:text-3xl">
@@ -407,19 +408,6 @@ function Home() {
             </p>
             <a href="#contacto" className="btn-red mt-6">
               Leer más <ArrowRight className="h-4 w-4" />
-            </a>
-          </div>
-
-          <div id="contacto" className="rounded-2xl bg-card p-7 card-shadow">
-            <span className="grid h-10 w-10 place-items-center rounded-full bg-primary text-primary-foreground">
-              <MessageCircle className="h-5 w-5" />
-            </span>
-            <h3 className="mt-4 text-lg font-semibold">¿Listo para el siguiente paso?</h3>
-            <p className="mt-2 text-sm text-muted-foreground">
-              Escríbenos y conversemos sobre tu proyecto.
-            </p>
-            <a href="#contacto" className="btn-red mt-5">
-              Contáctanos <ArrowRight className="h-4 w-4" />
             </a>
           </div>
 
@@ -442,6 +430,8 @@ function Home() {
           </div>
         </div>
       </section>
+
+      <ContactSection />
 
       {/* FOOTER */}
       <footer className="border-t border-border bg-ink">

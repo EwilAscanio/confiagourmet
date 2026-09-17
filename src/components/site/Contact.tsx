@@ -29,7 +29,7 @@ import {
 import cookware from "@/assets/business-cookware.jpg";
 
 // TODO: reemplazar por la ubicación real de Confía Gourmet.
-const MAP_QUERY = "Caracas, Venezuela";
+const MAP_QUERY = "Bucaramanga, Santander, Colombia";
 const MAP_SRC = `https://www.google.com/maps?q=${encodeURIComponent(MAP_QUERY)}&z=12&output=embed`;
 
 const INTERESTS = [
@@ -52,8 +52,8 @@ const formSchema = z.object({
 type FormValues = z.infer<typeof formSchema>;
 
 const contactItems = [
-  { icon: Mail, text: "cvx.eascanio@gmail.com" },
-  { icon: MessageCircle, text: "WhatsApp: escríbenos desde el botón flotante" },
+  { icon: Mail, text: "info@confiagourmet.com" },
+  { icon: MessageCircle, text: "WhatsApp: +57 300 123 4567" },
   { icon: MapPin, text: `${MAP_QUERY} (ubicación provisional)` },
 ] as const;
 
@@ -177,7 +177,7 @@ export function ContactSection() {
                       <FormLabel>Teléfono (opcional)</FormLabel>
                       <FormControl>
                         <Input
-                          placeholder="+58 ..."
+                          placeholder="+57 3XX XXX XXXX"
                           className="h-11 rounded-lg border-white/20 bg-transparent placeholder:text-muted-foreground focus-visible:ring-primary"
                           {...field}
                         />

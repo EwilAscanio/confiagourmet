@@ -28,8 +28,8 @@ import { Logo } from "@/components/site/Logo";
 import { Gallery } from "@/components/site/Gallery";
 import mark from "@/assets/confia-mark.png";
 import heroImg from "@/assets/hero-lider.jpg";
-import leaderMan from "@/assets/leader-man.jpg";
-import leaderWoman from "@/assets/leader-woman.jpg";
+import yorman from "@/assets/lider_yorman.jpg";
+import joni from "@/assets/lider_joni.jpg";
 import entrepreneur from "@/assets/entrepreneur.jpg";
 import cookware from "@/assets/business-cookware.jpg";
 import academy from "@/assets/academy.jpg";
@@ -68,7 +68,7 @@ function Home() {
       <Nav />
 
       {/* HERO */}
-      <section className="relative h-[100svh] min-h-[640px] overflow-hidden pt-20">
+      <section className="relative flex min-h-[100svh] flex-col overflow-hidden pt-20">
         <img
           src={heroImg}
           alt="Líder de Confía Gourmet en una reunión de negocios"
@@ -78,7 +78,7 @@ function Home() {
         />
         <div className="hero-scrim absolute inset-0" />
 
-        <div className="relative mx-auto flex h-full max-w-[1400px] flex-col justify-center px-5 pb-56 pt-10 sm:pb-44 lg:pb-40 lg:px-8">
+        <div className="relative z-10 mx-auto flex w-full max-w-[1400px] flex-1 flex-col justify-center px-5 py-10 sm:py-14 lg:px-8">
           <div className="max-w-2xl">
             <p
               className="eyebrow animate-fade-in !text-foreground/70 !tracking-[0.35em]"
@@ -130,7 +130,7 @@ function Home() {
         </div>
 
         {/* pillar strip */}
-        <div className="absolute inset-x-0 bottom-0 animate-[hero-rise_0.7s_ease-out_1s_both] border-t border-border/60 bg-ink/70 backdrop-blur-md">
+        <div className="relative z-10 animate-[hero-rise_0.7s_ease-out_1s_both] border-t border-border/60 bg-ink/70 backdrop-blur-md">
           <div className="mx-auto grid max-w-[1400px] grid-cols-2 divide-border/60 px-5 sm:grid-cols-3 lg:grid-cols-5 lg:divide-x lg:px-8">
             {heroPillars.map(({ icon: Icon, label }) => (
               <div key={label} className="flex items-center gap-3 px-2 py-5 lg:px-6">
@@ -220,14 +220,14 @@ function Home() {
           <div className="grid grid-cols-2 gap-5">
             {[
               {
-                img: leaderMan,
-                name: "Carlos Medina",
-                role: "Director de red y formación empresarial.",
+                img: yorman,
+                name: "Yorman Lizcano",
+                role: "CEO (Director Ejecutivo)",
               },
               {
-                img: leaderWoman,
-                name: "Daniela Rojas",
-                role: "Líder de acompañamiento y desarrollo de equipos.",
+                img: joni,
+                name: "Jonilce Flores",
+                role: "COO (Directora de Operaciones)",
               },
             ].map((p) => (
               <article key={p.name} className="overflow-hidden rounded-2xl bg-card card-shadow">
@@ -235,8 +235,8 @@ function Home() {
                   src={p.img}
                   alt={`Retrato de ${p.name}`}
                   loading="lazy"
-                  width={912}
-                  height={1104}
+                  width={1728}
+                  height={3072}
                   className="h-64 w-full object-cover sm:h-80"
                 />
                 <div className="border-l-2 border-primary p-5">
